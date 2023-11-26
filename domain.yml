@@ -1,0 +1,70 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - schedule_appointment
+  - reschedule_appointment
+  - cancel_appointment
+  - medical_advice
+  - health_query
+  - medication_info
+  - symptom_checker
+  - emergency_assistance
+  - user_feedback
+  - thanks
+  - fallback
+
+responses:
+  utter_greet:
+  - text: "Hello there! My name is Hanna, How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Take care and get well soon."
+
+  utter_affirm:
+  - text: "Great to hear that!"
+
+  utter_deny:
+  - text: "I understand."
+
+  utter_schedule_appointment:
+  - text: "Sure, let's schedule an appointment. When would you prefer?"
+
+  utter_reschedule_appointment:
+  - text: "Certainly, let me find a new time for your appointment. When are you available?"
+
+  utter_cancel_appointment:
+  - text: "I'm sorry to hear that. Could you provide the reason for cancellation? We'll try to assist you further."
+
+  utter_medical_advice:
+  - text: "I'm not a doctor, but I can offer general advice. Please describe your problem, and I'll do my best to help."
+
+  utter_health_query:
+  - text: "Sure, I can provide information on various health topics. What specific information are you looking for?"
+
+  utter_medication_info:
+  - text: "Certainly! Please provide the name of the medication you're interested in, and I'll fetch the relevant information."
+
+  utter_symptom_checker:
+  - text: "I'm not a doctor, but I can help you explore possible causes of your symptoms. Please describe your symptoms in detail."
+
+  utter_emergency_assistance:
+  - text: "I'm sorry to hear that you're in distress. If it's an emergency, please call your local emergency services immediately."
+
+  utter_user_feedback:
+  - text: "Thank you for your feedback! We appreciate your input as we strive to improve our service."
+
+  utter_thanks:
+  - text: "You're welcome! If you have any more questions, feel free to ask."
+
+  utter_fallback:
+  - text: "I'm sorry, I didn't understand that. Can you please rephrase or provide more details?"
+
+  utter_iamabot:
+  - text: "I am a bot, working proudly for healthcare sector Pune Hospital ."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

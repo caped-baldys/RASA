@@ -1,0 +1,70 @@
+version: "3.1"
+
+stories:
+  - story: greet and schedule appointment
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: schedule_appointment
+      - action: utter_schedule_appointment
+      - intent: affirm
+      - action: utter_affirm
+
+  - story: reschedule appointment
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: reschedule_appointment
+      - action: utter_reschedule_appointment
+      - intent: deny
+      - action: utter_deny
+     
+
+  - story: cancel appointment
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: cancel_appointment
+      - action: utter_cancel_appointment
+
+  - story: seek medical advice
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: medical_advice
+      - action: utter_medical_advice
+
+  - story: inquire about medication
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: medication_info
+      - action: utter_medication_info
+
+  - story: check symptoms
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: symptom_checker
+      - action: utter_symptom_checker
+
+  - story: emergency assistance
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: emergency_assistance
+      - action: utter_emergency_assistance
+
+  - story: express thanks
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: thanks
+      - action: utter_thanks
+
+  - story: handle fallback
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: fallback
+      - action: utter_fallback

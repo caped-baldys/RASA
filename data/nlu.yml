@@ -1,0 +1,229 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+      - Hi
+      - Hello
+      - Hey
+      - Hi there
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      
+- intent: goodbye
+  examples: |
+      - Goodbye
+      - Bye
+      - See you later
+      - Farewell
+
+- intent: affirm
+  examples: |
+      - Yes
+      - Sure
+      - Absolutely
+      - That's right
+      - Yes, that's correct
+
+
+- intent: deny
+  examples: |
+      - No
+      - Nope
+      - Nah
+      - No way
+      - That's wrong
+      - That's incorrect
+      - I don't think so
+      - I disagree
+      - Not really
+
+- intent: schedule_appointment
+  examples: |
+      - I want to schedule an appointment
+      - I need to schedule an appointment
+      - I want to book an appointment
+      - I need to book an appointment
+      - I want to make an appointment
+      - I need to make an appointment
+      - I want to see a doctor
+      - I need to see a doctor
+      - I want to see a physician
+      - I need to see a physician
+      - I want to see a specialist
+      - I need to see a specialist
+      - I want to see a therapist
+      - I need to see a therapist
+      - I want to see a psychiatrist
+      - I need to see a psychiatrist
+      - I want to see a psychologist
+      - I need to see a psychologist
+      - I want to see a nurse
+      - I need to see a nurse
+      - I want to see a physician assistant
+      - I need to see a physician assistant
+      - I want to see a nurse practitioner
+      - I need to see a nurse practitioner
+      - I want to see a chiropractor
+      - I need to see a chiropractor
+      - I want to see a dentist
+      - I need to see a dentist
+      - I want to see a physical therapist
+      - I need to see a physical therapist
+      - I want to see a surgeon
+      - I need to see a surgeon
+      - I want to see a cardiologist
+      - I need to see a cardiologist
+      - I want to see a dermatologist
+      - I need to see a dermatologist
+      - I want to see a gastroenterologist
+      - I need to see a gastroenterologist
+      - I want to see a neurologist
+      - I need to see a neurologist
+      - I want to see a gynecologist
+      - I need to see a gynecologist
+      - I want to see a urologist
+      - I need to see a urologist
+      - I want to see a ophthalmologist
+      - I need to see a ophthalmologist
+      - I want to see a otolaryngologist
+      - I need to see a otolaryngologist
+      - I want to see a psychiatrist
+      - I need to see a psychiatrist
+      - I want to see a radiologist
+    
+
+- intent: reschedule_appointment
+  examples: |
+      - I want to reschedule my appointment
+      - I need to reschedule my appointment
+      - I want to change my appointment
+      - I need to change my appointment
+      - I want to change the date of my appointment
+      - I need to change the date of my appointment
+      - I want to change the time of my appointment
+      - I need to change the time of my appointment
+      - I want to change the location of my appointment
+      - I need to change the location of my appointment
+      - I want to change the doctor of my appointment
+      - I need to change the doctor of my appointment
+      - I want to change the physician of my appointment
+      - I need to change the physician of my appointment
+      - I want to change the specialist of my appointment
+      - I need to change the specialist of my appointment
+      - I want to change the therapist of my appointment
+      - I need to change the therapist of my appointment
+      - I want to change the psychiatrist of my appointment
+      - I need to change the psychiatrist of my appointment
+      - I want to change the psychologist of my appointment
+      - I need to change the psychologist of my appointment
+      - I want to change the nurse of my appointment
+      - I need to change the nurse of my appointment
+      - I want to change the physician assistant of my appointment
+      - I need to change the physician assistant of my appointment
+      - I want to change the nurse practitioner of my appointment
+      - I need to change the nurse practitioner of my appointment
+      - I want to change the chiropractor of my appointment
+      - I need to change the chiropractor of my appointment
+      - I want to change the dentist of my appointment
+      - I need to change the dentist of my appointment
+      - I want to change the physical therapist of my appointment
+      - I need to change the physical therapist of my appointment
+      - I want to change the surgeon of my appointment
+      - I need to change the surgeon of my appointment
+      - I want to change the cardiologist of my appointment
+      - I need to change the cardiologist of my appointment
+      - I want to change the dermatologist of my appointment
+      - I need to change the dermatologist of my appointment
+      - I want to change the gastroenterologist of my appointment
+
+- intent: cancel_appointment
+  examples: |
+      - Cancel my appointment
+      - I can't make it to my appointment
+      - Remove my appointment from the schedule
+      - I want to cancel my appointment
+      - I need to cancel my appointment
+      - I want to cancel my appointment
+
+- intent: medical_advice
+  examples: |
+      - Give me medical advice
+      - What should I do for this symptom?
+      - Can you provide health guidance?
+      - I need medical advice
+      - I need health guidance
+
+- intent: health_query
+  examples: |
+      - Tell me about a healthy diet
+      - What are common symptoms of flu?
+      - Provide information on staying healthy
+
+
+- intent: medication_info
+  examples: |
+      - Tell me about [medication_name]
+      - What are the side effects of [medication]?
+      - Provide information on [medication]
+
+- intent: symptom_checker
+  examples: |
+      - I have [symptom], what could it be?
+      - What are the causes of [symptom]?
+      - Check my symptoms
+
+- intent: emergency_assistance
+  examples: |
+      - I need emergency assistance
+      - I need urgent help
+      - Call emergency services
+      - Emergency assistance required
+      - I need urgent assistance
+
+- intent: user_feedback
+  examples: |
+      - I liked the service
+      - I have a suggestion
+      - Provide feedback on the service
+      - I have a complaint
+      - I have a compliment
+      - I like u
+      - I love u
+      - I hate u
+      - I don't liked the service
+      - good service
+      - bad service
+
+- intent: thanks
+  examples: |
+      - Thank you
+      - Thanks
+      - Thanks a lot
+      - Appreciate your help
+      - Thank you very much
+
+- intent: fallback
+  examples: |
+      - I don't know
+      - I'm not sure
+      - Can you repeat that?
+      - Sorry, I didn't understand
+      - Sorry, what was that?
+
+- intent: bot_challenge
+  examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+
